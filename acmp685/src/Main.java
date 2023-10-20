@@ -14,12 +14,12 @@ public class Main {
 		int b2 = in.nextInt();
 		int b3 = in.nextInt();
 		
-		int maxA = Math.max(a1, Math.max(a1, a3));
-		int minA = Math.min(a1, Math.min(a1, a3));
+		int maxA = Math.max(a1, Math.max(a2, a3));
+		int minA = Math.min(a1, Math.min(a2, a3));
 		int midA = a1+a2+a3 - minA - maxA;
 		
-		int maxB = Math.max(b1, Math.max(b1, b3));
-		int minB = Math.min(b1, Math.min(b1, b3));
+		int maxB = Math.max(b1, Math.max(b2, b3));
+		int minB = Math.min(b1, Math.min(b2, b3));
 		int midB = b1+b2+b3 - maxB - minB;	
 		
 		int sum = maxA*maxB + midA*midB + minA*minB;

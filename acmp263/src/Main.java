@@ -8,14 +8,16 @@ public class Main {
 	
 	void solve(Scanner in, PrintWriter out) {
 		int n = in.nextInt();
-		BigInteger result = BigInteger.ONE;
-		if (n<2) {
-			out.println(1);
-		} else {
-			for (int i = 2; i <= n; i++)
-		        result = result.multiply(BigInteger.valueOf(i));		     
-			out.println(result);
-		}
+		int i = in.nextInt();
+		int j = in.nextInt();
+		
+		int a = Math.min(j,i);
+		int b = Math.max(i,j);		
+		
+		
+				     
+		out.println( Math.min( (b - a -1), (n + a - b - 1) ));
+		
 	    
 	}
 	
